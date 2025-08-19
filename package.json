@@ -1,0 +1,19 @@
+{
+  "name": "playwright-cucumber-allure-spiceclub",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npx cucumber-js -p default",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.47.0",
+    "chai": "^5.1.0",
+    "playwright": "^1.47.0"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.24.0"
+  }
+}
