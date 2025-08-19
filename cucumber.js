@@ -1,10 +1,11 @@
-// const { IRunConfiguration } = require("@cucumber/cucumber/api"); // Uncomment if you need to use IRunConfiguration at runtime
+// const { IRunConfiguration } = require("@cucumber/cucumber/api"); 
+// Uncomment if you need to use IRunConfiguration at runtime
 
 const common = {
   require: [
     "ts-node/register",
-    "src/steps/**/*.ts",
-    "src/support/**/*.ts"
+    "src/steps/**/*.js",
+    "src/support/**/*.js"
   ],
   format: [
     "summary",
@@ -14,4 +15,4 @@ const common = {
   ]
 };
 
-export default common;
+module.exports = common;
